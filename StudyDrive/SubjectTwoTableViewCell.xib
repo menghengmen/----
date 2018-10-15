@@ -18,18 +18,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-RL-AVn">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3d3-RL-AVn">
                         <rect key="frame" x="10" y="10" width="80" height="80"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="404-sS-RSJ"/>
+                            <constraint firstAttribute="width" constant="80" id="YJ0-yk-ecs"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-8Y-ezF">
-                        <rect key="frame" x="107" y="39" width="205" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-8Y-ezF">
+                        <rect key="frame" x="105" y="39" width="210" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QVN-8Y-ezF" secondAttribute="trailing" constant="5" id="ShL-Pz-NCf"/>
+                    <constraint firstAttribute="bottom" secondItem="3d3-RL-AVn" secondAttribute="bottom" constant="10" id="Tes-cf-0Ha"/>
+                    <constraint firstItem="3d3-RL-AVn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="amW-L1-JAu"/>
+                    <constraint firstItem="QVN-8Y-ezF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fK3-Qr-SBA"/>
+                    <constraint firstItem="3d3-RL-AVn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="q2x-F6-vwR"/>
+                    <constraint firstItem="QVN-8Y-ezF" firstAttribute="leading" secondItem="3d3-RL-AVn" secondAttribute="trailing" constant="15" id="tES-39-lyw"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="theTitleLabel" destination="QVN-8Y-ezF" id="ICa-LL-lNc"/>

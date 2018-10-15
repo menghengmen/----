@@ -13,9 +13,18 @@
 {
     UITableView *_tableView;
 }
+@property (nonatomic,strong) NSMutableArray *titleArray;
 @end
 
 @implementation SubjectTwoViewController
+
+-(NSMutableArray*)titleArray{
+    if (!_titleArray) {
+        _titleArray = [[NSMutableArray alloc] initWithObjects:@"方向盘的操作方法",@"刹车和油门的操作方法",@"油门离合器配合的操作方法", nil];
+    }
+    return _titleArray;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,7 +39,7 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return self.titleArray.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
@@ -42,12 +51,12 @@
         cell = [[[NSBundle mainBundle]loadNibNamed:cellId owner:self options:nil]lastObject];
     }
     cell.titleImageView.image=[UIImage imageNamed:@"subject.png"];
-    cell.theTitleLabel.text=[NSString stringWithFormat:@"视频:%ld",indexPath.row];
+    cell.theTitleLabel.text=self.titleArray[indexPath.row];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString * path = [[NSBundle mainBundle]pathForResource:@"shipin" ofType:@"mp4"];
+    NSString * path = [[NSBundle mainBundle]pathForResource:[NSString stringWithFormat:@"shipin0%ld",indexPath.row+1] ofType:@"mp4"];
     NSURL * url = [NSURL fileURLWithPath:path];
     MPMoviePlayerViewController * movie = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
     movie.moviePlayer.shouldAutoplay = YES;

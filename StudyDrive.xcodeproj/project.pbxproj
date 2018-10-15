@@ -78,6 +78,9 @@
 		18F72C941B5C8AAA00DC7C13 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F72C931B5C8AAA00DC7C13 /* libsqlite3.dylib */; };
 		18F72C971B5C8AF300DC7C13 /* MyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F72C961B5C8AF300DC7C13 /* MyDataManager.m */; };
 		18F72C9B1B5C8D5500DC7C13 /* TestSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F72C9A1B5C8D5500DC7C13 /* TestSelectModel.m */; };
+		B0BFE05E2174BF1300E59606 /* shipin01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0BFE05D2174BF1200E59606 /* shipin01.mp4 */; };
+		B0BFE0602174C0D500E59606 /* shipin02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0BFE05F2174C0D500E59606 /* shipin02.mp4 */; };
+		B0BFE0642174C3C200E59606 /* shipin03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0BFE0632174C3C200E59606 /* shipin03.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +196,9 @@
 		18F72C961B5C8AF300DC7C13 /* MyDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataManager.m; sourceTree = "<group>"; };
 		18F72C991B5C8D5500DC7C13 /* TestSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSelectModel.h; sourceTree = "<group>"; };
 		18F72C9A1B5C8D5500DC7C13 /* TestSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSelectModel.m; sourceTree = "<group>"; };
+		B0BFE05D2174BF1200E59606 /* shipin01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipin01.mp4; sourceTree = "<group>"; };
+		B0BFE05F2174C0D500E59606 /* shipin02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipin02.mp4; sourceTree = "<group>"; };
+		B0BFE0632174C3C200E59606 /* shipin03.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipin03.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,11 +277,7 @@
 		18F1C85E1B4CD9B100D23BE3 = {
 			isa = PBXGroup;
 			children = (
-				186150941B9886E90037AFE1 /* default.png */,
-				186150951B9886E90037AFE1 /* default@2x.png */,
-				186150961B9886E90037AFE1 /* 213.png */,
-				186150971B9886E90037AFE1 /* 12321.png */,
-				18DF97871B8E050D00590439 /* subject.png */,
+				B0BFE0652174C40B00E59606 /* Resource */,
 				18F72C931B5C8AAA00DC7C13 /* libsqlite3.dylib */,
 				18F72C981B5C8D1900DC7C13 /* model */,
 				18F72B451B5C89DA00DC7C13 /* libs */,
@@ -418,6 +420,21 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		B0BFE0652174C40B00E59606 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B0BFE0632174C3C200E59606 /* shipin03.mp4 */,
+				B0BFE05F2174C0D500E59606 /* shipin02.mp4 */,
+				B0BFE05D2174BF1200E59606 /* shipin01.mp4 */,
+				186150941B9886E90037AFE1 /* default.png */,
+				186150951B9886E90037AFE1 /* default@2x.png */,
+				186150961B9886E90037AFE1 /* 213.png */,
+				186150971B9886E90037AFE1 /* 12321.png */,
+				18DF97871B8E050D00590439 /* subject.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,6 +542,7 @@
 				18470B281B80C64B00A9FB7A /* MainTestViewController.xib in Resources */,
 				186150991B9886E90037AFE1 /* default@2x.png in Resources */,
 				18F1C8BD1B4CDB4F00D23BE3 /* 21.png in Resources */,
+				B0BFE05E2174BF1300E59606 /* shipin01.mp4 in Resources */,
 				18F1C87B1B4CD9B100D23BE3 /* LaunchScreen.xib in Resources */,
 				18F1C8B91B4CDB4F00D23BE3 /* 18.png in Resources */,
 				18F1C8C41B4CDB4F00D23BE3 /* 8.png in Resources */,
@@ -534,11 +552,13 @@
 				18F1C8AF1B4CDB4F00D23BE3 /* 111q.png in Resources */,
 				186DFA451B5DFC0000974A7F /* AnswerTableViewCell.xib in Resources */,
 				18F1C8BC1B4CDB4F00D23BE3 /* 20.png in Resources */,
+				B0BFE0602174C0D500E59606 /* shipin02.mp4 in Resources */,
 				18F1C8B41B4CDB4F00D23BE3 /* 16-2.png in Resources */,
 				18F1C8BB1B4CDB4F00D23BE3 /* 2.png in Resources */,
 				1861509A1B9886E90037AFE1 /* 213.png in Resources */,
 				18F72C8D1B5C89F500DC7C13 /* data.sqlite in Resources */,
 				18F1C8781B4CD9B100D23BE3 /* Images.xcassets in Resources */,
+				B0BFE0642174C3C200E59606 /* shipin03.mp4 in Resources */,
 				18F1C8B31B4CDB4F00D23BE3 /* 15.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

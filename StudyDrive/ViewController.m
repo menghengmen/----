@@ -41,7 +41,7 @@
         case 102:
         {
             UIBarButtonItem * item = [[UIBarButtonItem alloc]init];
-            item.title=@"";
+            item.title=@"科目二";
             self.navigationItem.backBarButtonItem=item;
             [self.navigationController pushViewController:[[SubjectTwoViewController alloc]init] animated:YES];
             
@@ -49,12 +49,18 @@
             break;
         case 103:
         {
-            
+            UIBarButtonItem * item = [[UIBarButtonItem alloc]init];
+            item.title=@"科目三";
+            self.navigationItem.backBarButtonItem=item;
+            [self.navigationController pushViewController:[[SubjectTwoViewController alloc]init] animated:YES];
         }
             break;
         case 104:
         {
-            
+            UIBarButtonItem * item = [[UIBarButtonItem alloc]init];
+            item.title=@"科目四";
+            self.navigationItem.backBarButtonItem=item;
+            [self.navigationController pushViewController:[[FirstViewController alloc]init] animated:YES];
         }
             break;
         case 105:
